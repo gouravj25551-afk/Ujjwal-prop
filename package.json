@@ -1,0 +1,17 @@
+{
+  "name": "ujjwal-properties",
+  "private": true,
+  "description": "Website for Ujjwal Properties, Gurugram",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "npm run check:html && npm run check:site && npm test",
+    "check:html": "html-validate \"*.html\"",
+    "check:site": "node scripts/check-site.mjs",
+    "test": "playwright test",
+    "screenshots": "node scripts/screenshots.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "html-validate": "^9.4.0"
+  }
+}
